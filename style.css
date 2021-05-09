@@ -1,0 +1,89 @@
+:root {
+    --PAPAYA: #E24E42;
+    --AQUA: #008F95;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(235, 110, 128, .25) 1.1px, #ffffff 1.1px);
+    background-size: 22px 22px;
+}
+
+body, form, input {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 5rem;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    color: var(--PAPAYA);
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    color: var(--AQUA);
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+form {
+    margin: 3rem 0;
+}
+
+label {
+    font-weight: bold;
+    color: var(--PAPAYA);
+    margin-right: .5rem;
+}
+
+input  {
+    font-weight: 500;
+    padding: .7rem 1rem;
+    width: 6rem;
+    outline: none;
+    background: white;
+    margin-bottom: 1rem;
+    border: 2px solid var(--PAPAYA);
+}
+
+#submit {
+    height: 3rem;
+    width: auto;
+    padding: .5rem 2rem;
+    font-weight: bold;
+    color: var(--PAPAYA);
+    transition: 100ms;
+    margin: 1rem 0 0 0;
+}
+
+#submit:hover {
+    color: white;
+    background-color: var(--PAPAYA);
+    cursor: pointer;
+}
+
+#submit:active {
+    transform: scale(.9);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: .75rem;
+    color: white;
+    background-color: var(--PAPAYA);
+}

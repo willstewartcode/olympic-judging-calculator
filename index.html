@@ -1,0 +1,54 @@
+<!-- 
+    Will Stewart
+    CSCI 3300 W1
+    18 April 2021
+    Assignment 7 - Q2 - Olympic Judging Calculator
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Stewart's Olympic Judging Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Will Stewart's Olympic Judging Calculator</h1>
+    </header>
+    <section>
+        <h3>Enter scores</h3>
+        <p>Enter the judge's scores from eight countries. The program will remove the highest and lowest
+            scores and keep the remaining six. The participant's score will be based on the remaining 6 values.
+        </p>
+        <form name="judgeScores" action="javascript:calculateScores();">
+            <label for="judgeA">Country A Judge:</label>
+            <input type="number" name="judgeA" id="judgeA" step="0.1"><br>
+            <label for="judgeB">Country B Judge:</label>
+            <input type="number" name="judgeB" id="judgeB" step="0.1"><br>
+            <label for="judgeC">Country C Judge:</label>
+            <input type="number" name="judgeC" id="judgeC" step="0.1"><br>
+            <label for="judgeD">Country D Judge:</label>
+            <input type="number" name="judgeD" id="judgeD" step="0.1"><br>
+            <label for="judgeE">Country E Judge:</label>
+            <input type="number" name="judgeE" id="judgeE" step="0.1"><br>
+            <label for="judgeF">Country F Judge:</label>
+            <input type="number" name="judgeF" id="judgeF" step="0.1"><br>
+            <label for="judgeG">Country G Judge:</label>
+            <input type="number" name="judgeG" id="judgeG" step="0.1"><br>
+            <label for="judgeH">Country H Judge:</label>
+            <input type="number" name="judgeH" id="judgeH" step="0.1"><br>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+
+        <div id="results"></div>
+    </section>
+    <footer><p>&#169; 2021 Will Stewart</p></footer>
+</body>
+</html>

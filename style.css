@@ -1,6 +1,7 @@
 :root {
     --PAPAYA: #E24E42;
     --AQUA: #008F95;
+    --LIGHT-GRAY: #f2f6fc;
 }
 
 * {
@@ -10,9 +11,7 @@
 }
 
 html {
-    background-color: #ffffff;
-    background-image: radial-gradient(rgba(235, 110, 128, .25) 1.1px, #ffffff 1.1px);
-    background-size: 22px 22px;
+    background-color: var(--LIGHT-GRAY);
 }
 
 body, form, input {
@@ -21,14 +20,20 @@ body, form, input {
 
 body {
     font-size: 1.1rem;
-    text-align: center;
+    line-height: 1.75rem;
+    width: fit-content;
+    margin: 50px auto;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.content-wrapper {
     padding: 5rem;
-    width: 80%;
-    margin: auto;
 }
 
 h1 {
-    color: var(--PAPAYA);
+    color: var(--AQUA);
     margin-bottom: 1.5rem;
 }
 
@@ -38,24 +43,37 @@ h3 {
     margin-bottom: .5rem;
 }
 
-form {
-    margin: 3rem 0;
+#description {
+    max-width: 600px;
+}
+
+form, section {
+    width: fit-content;
 }
 
 label {
+    display: inline-block;
     font-weight: bold;
-    color: var(--PAPAYA);
+    color: var(--AQUA);
     margin-right: .5rem;
+    width: 10rem;
 }
 
-input  {
+input {
     font-weight: 500;
+    font-size: 1rem;
     padding: .7rem 1rem;
     width: 6rem;
+    text-align: center;
     outline: none;
-    background: white;
+    background: var(--LIGHT-GRAY);
     margin-bottom: 1rem;
-    border: 2px solid var(--PAPAYA);
+    border: 2px solid var(--LIGHT-GRAY);
+    border-radius: 5px;
+}
+
+input:focus {
+    border-bottom: 2px solid var(--AQUA);
 }
 
 #submit {
@@ -63,14 +81,14 @@ input  {
     width: auto;
     padding: .5rem 2rem;
     font-weight: bold;
-    color: var(--PAPAYA);
+    color: var(--AQUA);
     transition: 100ms;
     margin: 1rem 0 0 0;
 }
 
 #submit:hover {
     color: white;
-    background-color: var(--PAPAYA);
+    background-color: var(--AQUA);
     cursor: pointer;
 }
 
@@ -79,11 +97,9 @@ input  {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
     padding: .75rem;
-    color: white;
-    background-color: var(--PAPAYA);
+    text-align: center;
+    color: gray;
+    background-color: var(--LIGHT-GRAY);
+    border-radius: 0 0 12px 12px;
 }

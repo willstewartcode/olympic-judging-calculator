@@ -85,6 +85,7 @@ input:focus {
     color: var(--AQUA);
     transition: 100ms;
     margin: 1rem 0 0 0;
+    border: none;
 }
 
 #submit:hover {

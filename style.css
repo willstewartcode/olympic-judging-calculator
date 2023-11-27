@@ -1,6 +1,7 @@
 :root {
     --PAPAYA: #E24E42;
     --AQUA: #008F95;
+    --AQUA-DARK: #007277;
     --LIGHT-GRAY: #f2f6fc;
 }
 
@@ -38,9 +39,9 @@ h1 {
 }
 
 h3 {
-    color: var(--AQUA);
-    font-weight: 500;
-    margin-bottom: .5rem;
+    color: var(--AQUA-DARK);
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 #description {
@@ -53,7 +54,7 @@ form, section {
 
 label {
     display: inline-block;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--AQUA);
     margin-right: .5rem;
     width: 10rem;
